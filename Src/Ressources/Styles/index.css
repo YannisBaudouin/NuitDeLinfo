@@ -1,0 +1,127 @@
+/* --------------------------------- Palettes de couleurs --------------------------------- */
+
+:root {
+    --prussian-blue: #0D1635ff;
+    --prussian-blue-2: #010C2Cff;
+    --cornsilk: #F7F1CFff;
+    --lipstick-red: #F01540ff;
+
+    /* texte */
+    --text-whit: rgb(227, 227, 227);
+    --carbon-black: #1E1B15ff;
+}
+
+/* --------------------------------- Principal --------------------------------- */
+html body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cornsilk);
+    color: var(--carbon-black);
+}
+
+/* --------------------------------- Header --------------------------------- */
+
+header {
+    background-color: var(--prussian-blue);
+    color: var(--text);
+    overflow: hidden;
+    padding: 14px 10px;
+}
+
+header a {
+    float: left;
+    color: var(--text-whit);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header-right {
+    float: right;
+    padding-right: 10%;
+}
+
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--prussian-blue);
+    color: var(--text-whit);
+    text-align: center;
+    padding: 14px 10px;
+}
+
+/* --------------------------------- Composants --------------------------------- */
+button {
+    background-color: red;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Accueil {
+    background-color: var(--prussian-blue-2);
+    color: var(--cornsilk);
+    height: 600px;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 10%;
+}
+
+/* --------------------------------- Parametres --------------------------------- */
+h1 {
+    color: var(--text-whit);
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-left: 40px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-style: italic;
+    padding-left: 60px;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.bg {
+    background-image: url("/NuitDeLinfo/Ressources/img/2379106.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
