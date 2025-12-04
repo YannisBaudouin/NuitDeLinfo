@@ -9,8 +9,6 @@
     /* texte */
     --text-whit: rgb(227, 227, 227);
     --carbon-black: #1E1B15ff;
-
-
 }
 
 /* --------------------------------- Principal --------------------------------- */
@@ -87,5 +85,11 @@ button {
 section {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-inline: 10px;
+    padding-inline: 10%;
+}
+
+/* --------------------------------- Parametres --------------------------------- */
+
+.center {
+    text-align: center;
 }
