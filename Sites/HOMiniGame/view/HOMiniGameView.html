@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Aubus-Saucisse</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script type="text/javascript" src="../script/script.js"></script>
-    </head>
-    <header>
-        <p>Haut</p>
-    </header>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../script/script.js"> </script>
+    <title>Trouver les objets</title>
+</head>
+<!-- ------------------------------ header ------------------------------ -->
+<header>
+    <a href=""><img id="logo" src="../../../Ressources/Assets/Logos/logo-nidr.png" alt="Logo NIDR"/> - Titre de la page</a>
+</header>
     <body>
         <div class="game">
             <img id="backgroundImage" src="../../../Ressources/Assets/modifiedClassroom.jpg">
             <img id="foregroundImage1" src="../../../Ressources/Assets/book.png" onclick="carte(1)">
-            <img id="foregroundImage2" src="../../../Ressources/Assets/placeholder.png" onclick="carte(2)">
-            <img id="foregroundImage3" src="../../../Ressources/Assets/placeholder.png" onclick="carte(3)">
-            <img id="foregroundImage4" src="../../../Ressources/Assets/placeholder.png" onclick="carte(4)">
+            <img id="foregroundImage2" src="../../../Ressources/Assets/pen.png" onclick="carte(2)">
+            <img id="foregroundImage3" src="../../../Ressources/Assets/paperball.png" onclick="carte(3)">
+            <img id="foregroundImage4" src="../../../Ressources/Assets/ruler.png" onclick="carte(4)">
+            <a href="../../Snake/index.html"> <img id="foregroundImage5" src="../../../Ressources/Assets/snak.png"></a>
         </div>
         <div class="toFind">
             <img id="toFindImage1" src="../../../Ressources/Assets/book.png">
-            <img id="toFindImage2" src="../../../Ressources/Assets/placeholder.png">
-            <img id="toFindImage3" src="../../../Ressources/Assets/placeholder.png">
-            <img id="toFindImage4" src="../../../Ressources/Assets/placeholder.png">
+            <img id="toFindImage2" src="../../../Ressources/Assets/pen.png">
+            <img id="toFindImage3" src="../../../Ressources/Assets/paperball.png">
+            <img id="toFindImage4" src="../../../Ressources/Assets/ruler.png">
         </div>
         <div id="cards">
             <label class="label">
@@ -96,8 +100,13 @@
                 </div>
             </label>
         </div>
+        <div id="starsParticles"></div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
     </body>
-    <footer>
-        <p>Bas</p>
-    </footer>
+<footer>
+    <button id="ment-leg"><a href="">Mentions légales</a></button>
+    <button id="cond-util"><a href="">Conditions d'utilisations</a></button>
+    <button id="github"><img id="logogithub" src="../../../Ressources/Assets/Logos/icons8-logo-github-94.png" alt="Logo Github"/><a href="">GitHub</a></button>
+</footer>
 </html>

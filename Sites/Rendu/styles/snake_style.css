@@ -1,0 +1,22 @@
+/* Write CSS Here */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+canvas {
+    border: 1px solid white;
+    background-image: url("../../../Ressources/Assets/Sprites/obstacles/emptyGrid.png");
+    background-size: 15px;
+}
+h1{
+    color: white;
+}

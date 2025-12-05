@@ -3,43 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>NIDR - Nuit de l'info</title>
+    <link rel="stylesheet" href="./styles/FO_style.css">
+    <script src="./scripts/FO_script.js"> </script>
+    <title>Trouver les objets</title>
 </head>
 <!-- ------------------------------ header ------------------------------ -->
 <header>
-    <a class="home" href="./index.html"><img id="logo" src="assets/logo-nidr.png" alt="Logo NIDR"/> - Accueil</a>
-
-    <nav class="menus">
-        <section class="categories">
-            <button>Principes clés</button>
-        </section>
-        <section class="categories">
-            <button>Comment?</button>
-        </section>
-        <section class="categories">
-            <button>Quizz</button>
-        </section>
-    </nav>
+    <a href=""><img id="logo" src="./assets/logo-nidr.png" alt="Logo NIDR"/> - Titre de la page</a>
 </header>
-<!-- ------------------------------ Corps ------------------------------ -->
-
-<body>
-    <div style="height: 100vh; width: 100vw;">
-
-    </div>
-
-    <div id="starsParticles"></div>
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
-    <script src="scripts/starsParticles.js"> </script>
-
-</body>
-<!-- ------------------------------ footer ------------------------------ -->
+    <body>
+        <div class="game">
+            <img id="backgroundImage" src="../../Ressources/Assets/modifiedClassroom.jpg">
+            <img id="foregroundImage1" src="../../Ressources/Assets/book.png" onclick="carte(1)">
+            <img id="foregroundImage2" src="../../Ressources/Assets/pen.png" onclick="carte(2)">
+            <img id="foregroundImage3" src="../../Ressources/Assets/paperball.png" onclick="carte(3)">
+            <img id="foregroundImage4" src="../../Ressources/Assets/ruler.png" onclick="carte(4)">
+            <a href="./snake.html"> <img id="foregroundImage5" src="../../Ressources/Assets/snak.png"></a>
+        </div>
+        <div class="toFind">
+            <img id="toFindImage1" src="../../Ressources/Assets/book.png">
+            <img id="toFindImage2" src="../../Ressources/Assets/pen.png">
+            <img id="toFindImage3" src="../../Ressources/Assets/paperball.png">
+            <img id="toFindImage4" src="../../Ressources/Assets/ruler.png">
+        </div>
+        <div id="cards">
+            <label class="label">
+                <input type="checkbox" />
+                <div class="flip-card">
+                    <div class="front">
+                        <h1></h1>
+                        <h2></h2>
+                        <b></b>
+                        <p>appuyez pour retourner</p>
+                    </div>
+                    <div class="back">
+                        <h1>DES MACHINS</h1>
+                        <hr />
+                        <p>truc</p>
+                        <hr />
+                        <p class="click">appuyez pour retourner</p>
+                    </div>
+                </div>
+            </label>
+            <label class="label">
+                <input type="checkbox" />
+                <div class="flip-card">
+                    <div class="front">
+                        <h1></h1>
+                        <h2></h2>
+                        <b></b>
+                        <p>appuyez pour retourner</p>
+                    </div>
+                    <div class="back">
+                        <h1>DES MACHINS</h1>
+                        <hr />
+                        <p>truc</p>
+                        <hr />
+                        <p class="click">appuyez pour retourner</p>
+                    </div>
+                </div>
+            </label>
+            <label class="label">
+                <input type="checkbox" />
+                <div class="flip-card">
+                    <div class="front">
+                        <h1></h1>
+                        <h2></h2>
+                        <b></b>
+                        <p>appuyez pour retourner</p>
+                    </div>
+                    <div class="back">
+                        <h1>DES MACHINS</h1>
+                        <hr />
+                        <p>truc</p>
+                        <hr />
+                        <p class="click">appuyez pour retourner</p>
+                    </div>
+                </div>
+            </label>
+            <label class="label">
+                <input type="checkbox" />
+                <div class="flip-card">
+                    <div class="front">
+                        <h1></h1>
+                        <h2></h2>
+                        <b></b>
+                        <p>appuyez pour retourner</p>
+                    </div>
+                    <div class="back">
+                        <h1>DES MACHINS</h1>
+                        <hr />
+                        <p>truc</p>
+                        <hr />
+                        <p class="click">appuyez pour retourner</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div id="starsParticles"></div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+    </body>
 <footer>
-    <button id="ment-leg"><a href="./mentionsLegales.html">Mentions légales</a></button>
-    <button id="cond-util"><a href="./conditionsUtilisation.html">Conditions d'utilisations</a></button>
+    <button id="ment-leg"><a href="">Mentions légales</a></button>
+    <button id="cond-util"><a href="">Conditions d'utilisations</a></button>
     <button id="github"><a href="">GitHub</a></button>
 </footer>
-
 </html>
