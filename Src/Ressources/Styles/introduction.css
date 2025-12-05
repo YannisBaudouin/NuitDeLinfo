@@ -88,13 +88,14 @@ header a {
 
 
 #logo{
-    height: 3vh;
+    height: 5vh;
     width: auto;
 }
 
 
 /* --------------------------------- Footer --------------------------------- */
 footer {
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -127,22 +128,13 @@ button {
 
 /* --------------------------------- Parametres --------------------------------- */
 
-.center-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-
 .friseChronoContainer {
     background-color: #0D1635ff;
-    margin-top: 1vh;
+    margin-top: 4vh;
     margin-left: 25vw;
     margin-right: 25vw;
     width: 50vw;
-    height: 50vh;
+    height: 70vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -155,12 +147,13 @@ button {
 }
 
 .friseChronoContainer .scene .text {
+    font-size: 1em;
     padding-top: 10%;
     text-align: center;
     margin: 4px;
     background-color:rgba(19, 30, 79, 1);
     width: 100%;
-    height: 90%;
+    height: 13em;
 }
 
 .friseChronoContainer .scene .visual {
@@ -170,7 +163,8 @@ button {
 }
 
 .friseChronoContainer .friseChrono {
-    background-color:rgb(61, 0, 56);
+    background: #A327A3;
+    background: radial-gradient(circle, rgba(163, 39, 163, 1) 0%, rgba(0, 0, 0, 1) 100%);
     width: 100%;
     height: 60%;
 
@@ -180,7 +174,8 @@ button {
 }
 
 .friseChronoContainer .friseChrono .main {
-    background-color:rgb(255, 0, 234);
+    background: #A327A3;
+    background: radial-gradient(circle, rgba(163, 39, 163, 1) 0%, rgba(0, 0, 0, 1) 100%);
     width: 90%;
     height: 60%;
 
@@ -191,12 +186,20 @@ button {
 
 .friseChronoContainer .friseChrono .friseBtn {
     cursor: pointer;
-    background-color:rgb(255, 143, 246);
+    background-color:rgb(233, 0, 213);
     width: 20%;
     height: 110%;
     border-radius: 100%;
 }
 
 .friseChronoContainer .friseChrono .friseBtn p {
+    text-align: center;
     padding-top: 20%;
+    font-size: 0.75em;
+}
+
+.friseChronoContainer .friseChrono .friseBtn:hover {
+    transform: scale(1.10);
+    color: rgb(255, 221, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }

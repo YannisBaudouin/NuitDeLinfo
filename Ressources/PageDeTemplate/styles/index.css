@@ -90,7 +90,7 @@ header a {
 
 
 #logo{
-    height: 3vh;
+    height: 5vh;
     width: auto;
 }
 
@@ -100,7 +100,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: rgb(40, 40, 40);
-    color: var(--text-whit);
+    color: white;
     text-align: center;
     padding: 14px 10px;
 }
