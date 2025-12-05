@@ -169,7 +169,7 @@ input {
 
 label:hover :checked + .flip-card {
 	transform: rotateY(180deg);
-	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 1);
 }/* rotation de la carte  */
 
 .front img {
@@ -187,13 +187,13 @@ label:hover :checked + .flip-card {
 
 .front h2 {
 	font-size: 18px;
-	color: #4e699d;
+	color: #ffffff;
 	margin: 12px 0 12px 0;
 }/* taille sous titre front */
 
 .front b {
 	font-size: 120%;
-	color: #424752;
+	color: #ffffff;
 	margin: 0 0 20px 0;
 	display: block;
 }/* emplacement texte front */
@@ -202,10 +202,11 @@ label:hover :checked + .flip-card {
 .back .click {
 	font-size: 18px;
 	font-weight: 600;
+	color: #1e1e1e;
 }/* paragraphe front */
 
 .back h1 {
-	color: #424752;
+	color: #ffffff;
 	margin: 30px 0 0 0;
 }/* titre back */
 
@@ -216,7 +217,7 @@ hr {
 
 .back p {
 	font-size: 16px;
-	color: #000;
+	color: #ffffff;
 	padding: 0 18px;
 	line-height: 30px;
 	text-align: center;
