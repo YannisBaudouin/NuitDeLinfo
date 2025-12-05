@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/assemblage.css">
+    <title>NIDR - Nuit de l'info</title>
+</head>
+<!-- ------------------------------ header ------------------------------ -->
+<header>
+    <a class="home" href="./index.html"><img id="logo" src="assets/logo-nidr.png" alt="Logo NIDR"/> - Accueil</a>
+
+    <nav class="menus">
+        <section class="categories">
+            <button>Principes clés</button>
+        </section>
+        <section class="categories">
+            <button>Comment?</button>
+        </section>
+        <section class="categories">
+            <button>Quizz</button>
+        </section>
+    </nav>
+</header>
+<!-- ------------------------------ Corps ------------------------------ -->
+
+<body>
+    <div style="height: 100vh; width: 100vw;">
+        <div id="montageJeu" class="montageJeu">
+            <div class="carteMere">
+                <div class="conteneur" id="conteneur_gliden">
+
+                </div>
+
+                <div class="conteneur" id="conteneur_processeur">
+
+                </div>
+            </div>
+
+            <div id="listeComposants" class="listeComposants">
+                <div compName="gliden" class="dragObj"> </div>
+                <div compName="processeur" class="dragObj"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="starsParticles"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+    <script src="scripts/starsParticles.js"> </script>
+
+
+    <script type="text/javascript" src="scripts/assemblage.js"></script>
+</body>
+<!-- ------------------------------ footer ------------------------------ -->
+<footer>
+    <button id="ment-leg"><a href="./mentionsLegales.html">Mentions légales</a></button>
+    <button id="cond-util"><a href="./conditionsUtilisation.html">Conditions d'utilisations</a></button>
+    <button id="github"><a href="">GitHub</a></button>
+</footer>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/friseChrono.css">
+    <title>NIDR - Nuit de l'info</title>
+</head>
+<!-- ------------------------------ header ------------------------------ -->
+<header>
+    <a class="home" href="./index.html"><img id="logo" src="assets/logo-nidr.png" alt="Logo NIDR"/> - Accueil</a>
+
+    <nav class="menus">
+        <section class="categories">
+            <button>Principes clés</button>
+        </section>
+        <section class="categories">
+            <button>Comment?</button>
+        </section>
+        <section class="categories">
+            <button>Quizz</button>
+        </section>
+    </nav>
+</header>
+<!-- ------------------------------ Corps ------------------------------ -->
+
+<body>
+    <div style="height: 100vh; width: 100vw;">
+        <!--Le conteneur de la frise chronologique-->
+        <div class="friseChronoContainer">
+
+            <!--La frise-->
+            <div id="friseChrono" class="friseChrono">
+                <!--Boutons de la frise-->
+                <div class="main">
+                    <button id="btn1" class="friseBtn">
+                        <p>Création du projet</p>
+                    </button>
+
+                    <button id="btn2" class="friseBtn">
+                        <p>Lancement public et structuration</p>
+                    </button>
+
+                    <button id="btn3" class="friseBtn">
+                        <p>Engagement des établissements pilotes</p>
+                    </button>
+
+                    <button id="btn4" class="friseBtn">
+                        <p>Soutien institutionnel du CNLL</p>
+                    </button>
+                </div>
+            </div>
+
+            <!--Scenes-->
+            <div class="scene">
+                <div class="text">
+                    1. Création du projet
+                    <p>Le projet NIRD trouve son origine dans une initiative lancée le 22 avril 2024 
+                    au lycée Carnot de Bruay-la-Buissière, marquant le début du reconditionnement 
+                    d’ordinateurs sous Linux. Cette action constitue la date de création effective 
+                    du projet pilote.</p>
+                </div>
+            </div>
+
+            <div class="scene">
+                <div class="text">
+                    2. Lancement public et structuration
+                    <p>La démarche est officiellement présentée dans un article publié le 30 septembre 
+                    2025, intitulé "Logiciel libre : la Démarche NIRD, pour un numérique inclusif dans 
+                    les établissements scolaires". Elle est structurée autour de trois jalons : 
+                    Mobilisation, Expérimentation et Intégration.</p>
+                </div>
+            </div>
+
+            <div class="scene">
+                <div class="text">
+                    3. Engagement des établissements pilotes
+                    <p>Le 2 octobre 2025, une mise à jour confirme que 12 établissements (1 école 
+                    élémentaire, 4 collèges, 7 lycées) sont officiellement engagés comme pilotes 
+                    pour l’année scolaire 2025-2026.</p>
+                </div>
+            </div>
+
+            <div class="scene">
+                <div class="text">
+                    4. Soutien institutionnel du CNLL
+                    <p>Le 21 novembre 2025, le CNLL (Conseil National du logiciel libre) annonce 
+                    officiellement son soutien à la démarche NIRD, renforçant sa légitimité nationale 
+                    et facilitant les partenariats avec les collectivités.</p>
+                </div>
+            </div>
+            <!--Fin des Scenes-->
+        </div>
+
+        <button> <a href="./principesCles.html">Suivant</a> </button>
+
+        <script type="text/javascript" src="scripts/friseChrono.js"></script>
+    </div>
+
+    <div id="starsParticles"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+    <script src="scripts/starsParticles.js"> </script>
+</body>
+<!-- ------------------------------ footer ------------------------------ -->
+<footer>
+    <button id="ment-leg"><a href="./mentionsLegales.html">Mentions légales</a></button>
+    <button id="cond-util"><a href="./conditionsUtilisation.html">Conditions d'utilisations</a></button>
+    <button id="github"><a href="">GitHub</a></button>
+</footer>
+
+</html>
