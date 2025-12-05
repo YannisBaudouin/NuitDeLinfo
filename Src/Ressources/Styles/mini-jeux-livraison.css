@@ -1,0 +1,41 @@
+.jeuLivraison {
+    background-color: grey;
+    border-color: black;
+
+    width: 50vw;
+    height: 50vh;
+
+    overflow: hidden;
+}
+
+.jeuLivraison .joueur {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: blue;
+}
+
+.jeuLivraison .obstacle {
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(255, 0, 0);
+}
+
+.jeuLivraison .livraison {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(238, 255, 0);
+}
+
+.jeuLivraison .menu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}

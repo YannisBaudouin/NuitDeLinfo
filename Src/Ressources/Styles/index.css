@@ -20,37 +20,6 @@ html body {
     background-color: var(--cornsilk);
     color: var(--carbon-black);
 }
-
-/* --------------------------------- Header --------------------------------- */
-
-header {
-    background-color: var(--prussian-blue);
-    color: var(--text);
-    overflow: hidden;
-    padding: 14px 10px;
-}
-
-header a {
-    float: left;
-    color: var(--text-whit);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.header-right {
-    float: right;
-    padding-right: 10%;
-}
-
-header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
 /* --------------------------------- Footer --------------------------------- */
 footer {
     left: 0;
