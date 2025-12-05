@@ -15,11 +15,21 @@
 /* --------------------------------- Principal --------------------------------- */
 html body {
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cornsilk);
-    color: var(--carbon-black);
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(31, 24, 24, 1) 25%, rgba(19, 30, 79, 1) 50%, rgba(89, 47, 105, 1) 75%, rgba(163, 39, 163, 1) 100%);
+    color: white;
+}
+
+#logo{
+    height: 3vh;
+    width: auto;
+}
+
+#logogithub{
+    height: 3vh;
 }
 
 /* --------------------------------- Header --------------------------------- */
@@ -42,15 +52,46 @@ header a {
     border-radius: 4px;
 }
 
-.header-right {
+.menus {
     float: right;
-    padding-right: 10%;
+    padding-right: 20%;
+    border: 1px solid black;
 }
 
-header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+.menus button:hover {
+	color: rgb(255, 221, 0);
+    box-shadow: 0 0 10px rgb(255, 217, 0);
 }
+
+.menus .categories {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.menus .categories ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+	background-color: rgb(0, 0, 0);
+}
+
+.menus .categories ul:hover{
+    color: rgb(255, 221, 0);
+    box-shadow: 0 0 10px rgb(255, 217, 0);
+}
+
+.menus .categories:hover ul {
+	display: block;
+}
+
+
+#logo{
+    height: 3vh;
+    width: auto;
+}
+
 
 /* --------------------------------- Footer --------------------------------- */
 footer {
@@ -65,7 +106,7 @@ footer {
 
 /* --------------------------------- Composants --------------------------------- */
 button {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 5%;
     color: white;
@@ -83,33 +124,8 @@ button {
     height: 600px;
 }
 
-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-inline: 10%;
-}
 
 /* --------------------------------- Parametres --------------------------------- */
-h1 {
-    color: var(--text-whit);
-    font-size: 5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    padding-left: 20px;
-}
-
-h3 {
-    font-size: 1.2rem;
-    padding-left: 40px;
-}
-
-h4 {
-    font-size: 1rem;
-    font-style: italic;
-    padding-left: 60px;
-}
 
 .center-screen {
     display: flex;
@@ -119,23 +135,18 @@ h4 {
     min-height: 100vh;
 }
 
-.bg {
-    background-image: url("/NuitDeLinfo/Ressources/img/2379106.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 
 .friseChronoContainer {
-    background-color: aqua;
+    background-color: #0D1635ff;
+    margin-top: 1vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
     width: 50vw;
     height: 50vh;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content:center;
 }
 
 .friseChronoContainer .scene {
@@ -144,21 +155,24 @@ h4 {
 }
 
 .friseChronoContainer .scene .text {
-    background-color:blue;
+    padding-top: 10%;
+    text-align: center;
+    margin: 4px;
+    background-color:rgba(19, 30, 79, 1);
     width: 100%;
-    height: 30%;
+    height: 90%;
 }
 
 .friseChronoContainer .scene .visual {
     background-color:rgb(0, 255, 13);
     width: 100%;
-    height: 70%;
+    height: 10%;
 }
 
 .friseChronoContainer .friseChrono {
     background-color:rgb(61, 0, 56);
     width: 100%;
-    height: 20%;
+    height: 60%;
 
     display: flex;
     align-items: center;
@@ -178,7 +192,11 @@ h4 {
 .friseChronoContainer .friseChrono .friseBtn {
     cursor: pointer;
     background-color:rgb(255, 143, 246);
-    width: 8%;
-    height: 90%;
+    width: 20%;
+    height: 110%;
     border-radius: 100%;
+}
+
+.friseChronoContainer .friseChrono .friseBtn p {
+    padding-top: 20%;
 }

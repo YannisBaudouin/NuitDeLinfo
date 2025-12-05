@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Aubus-Saucisse</title>
+    <title>Introduction</title>
     <link rel="stylesheet" href="../Ressources/Styles/introduction.css">
 
 </head>
-<!-- Composant header -->
-<mon-header></mon-header>
-<script src="../Ressources/Composants/header.js"></script>
 
 <body>
+    <header>
+        <a href=""><img id="logo" src="../../Ressources/Assets/Logos/logo-nidr.png" alt="Logo NIDR"/> - Introduction</a>
+        <nav class="menus">
+        <section class="categories">
+            <button>Principes clés</button>
+            <ul>
+                <li><a href="">Menu 1</a></li>
+            </ul>
+        </section>
+        <section class="categories">
+            <button>Communication</button>
+            <ul>
+                <li>Menu 1</li>
+            </ul>
+        </section>
+        <section class="categories">
+            <button>Chemin</button>
+        </section>
+    </nav>
+    </header>
+
     <section>
         <!--Le conteneur de la frise chronologique-->
         <div class="friseChronoContainer">
 
+            <!--La frise-->
+            <div id="friseChrono" class="friseChrono">
+                <!--Boutons de la frise-->
+                <div class="main">
+                    <div id="btn1" class="friseBtn">
+                        <p>Création du projet</p>
+                    </div>
+
+                    <div id="btn2" class="friseBtn">
+                        <p>Lancement public et structuration</p>
+                    </div>
+
+                    <div id="btn3" class="friseBtn">
+                        <p>Engagement des établissements pilotes</p>
+                    </div>
+
+                    <div id="btn4" class="friseBtn">
+                        <p>Soutien institutionnel du CNLL</p>
+                    </div>
+                </div>
+            </div>
+
             <!--Scenes-->
             <div class="scene">
                 <div class="text">
-                    Le texte de la scene une
+                    1. Création du projet
+                    <p>Le projet NIRD trouve son origine dans une initiative lancée le 22 avril 2024 
+                    au lycée Carnot de Bruay-la-Buissière, marquant le début du reconditionnement 
+                    d’ordinateurs sous Linux. Cette action constitue la date de création effective 
+                    du projet pilote.</p>
                 </div>
 
                 <div class="visual">
@@ -27,7 +71,11 @@
 
             <div class="scene">
                 <div class="text">
-                    Le texte de la scene deux
+                    2. Lancement public et structuration
+                    <p>La démarche est officiellement présentée dans un article publié le 30 septembre 
+                    2025, intitulé "Logiciel libre : la Démarche NIRD, pour un numérique inclusif dans 
+                    les établissements scolaires". Elle est structurée autour de trois jalons : 
+                    Mobilisation, Expérimentation et Intégration.</p>
                 </div>
 
                 <div class="visual">
@@ -37,7 +85,23 @@
 
             <div class="scene">
                 <div class="text">
-                    Le texte de la scene trois
+                    3. Engagement des établissements pilotes
+                    <p>Le 2 octobre 2025, une mise à jour confirme que 12 établissements (1 école 
+                    élémentaire, 4 collèges, 7 lycées) sont officiellement engagés comme pilotes 
+                    pour l’année scolaire 2025-2026.</p>
+                </div>
+
+                <div class="visual">
+
+                </div>
+            </div>
+
+            <div class="scene">
+                <div class="text">
+                    4. Soutien institutionnel du CNLL
+                    <p>Le 21 novembre 2025, le CNLL (Conseil National du logiciel libre) annonce 
+                    officiellement son soutien à la démarche NIRD, renforçant sa légitimité nationale 
+                    et facilitant les partenariats avec les collectivités.</p>
                 </div>
 
                 <div class="visual">
@@ -45,24 +109,6 @@
                 </div>
             </div>
             <!--Fin des Scenes-->
-
-            <!--La frise-->
-            <div id="friseChrono" class="friseChrono">
-                <!--Boutons de la frise-->
-                <div class="main">
-                    <div class="friseBtn">
-
-                    </div>
-
-                    <div class="friseBtn">
-
-                    </div>
-
-                    <div class="friseBtn">
-
-                    </div>
-                </div>
-            </div>
         </div>
 
         <script type="text/javascript" src="../Ressources/Scripts/introduction.js"></script>
@@ -71,3 +117,9 @@
     </section>
 
 </body>
+<!-- ------------------------------ footer ------------------------------ -->
+<footer>
+    <button id="ment-leg"><a href="">Mentions légales</a></button>
+    <button id="cond-util"><a href="">Conditions d'utilisations</a></button>
+    <button id="github"><img id="logogithub" src="../../Ressources/Assets/Logos/icons8-logo-github-94.png" alt="Logo Github"/><a href="">GitHub</a></button>
+</footer>
