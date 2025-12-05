@@ -23,9 +23,6 @@ html body {
     color: var(--carbon-black);
 }
 
-*{
-    color: white;
-}
 
 button{
     text-decoration: none;
